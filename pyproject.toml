@@ -1,0 +1,23 @@
+[project]
+name = "clash-royale-mcp"
+version = "0.1.0"
+description = "MCP server exposing Clash Royale player and battle data to Claude via Supercell's API."
+readme = "README.md"
+authors = [
+    { name = "Grosb", email = "grosbinol@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "aiosqlite>=0.22.1",
+    "httpx>=0.28.1",
+    "mcp>=2.0.0",
+    "pydantic>=2.13.4",
+    "pydantic-settings>=2.15.0",
+]
+
+[project.scripts]
+clash-royale-mcp = "clash_royale_mcp.server:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"

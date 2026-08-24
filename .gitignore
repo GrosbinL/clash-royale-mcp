@@ -1,0 +1,27 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+.env
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Editors / IDEs
+.vscode/
+.idea/
+
+# Test caches
+.pytest_cache/
+
+# OS junk
+Thumbs.db
+.DS_Store
